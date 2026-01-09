@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - VR/AR Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VR/AR Pro</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-experience.html">Experience</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="features.html">Features ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                    </ul>
+                </li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="nav-buttons">
+                    <a href="login.html" class="btn-nav btn-nav-login">Login</a>
+                    <a href="register.html" class="btn-nav btn-nav-register">Register</a>
+                </li>
+                <li class="theme-toggle-mobile">
+                    <button class="theme-toggle">🌓</button>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1593642634367-d91a135587b5'); min-height: 60vh;">
+        <div class="hero-content">
+            <h1>Our Products</h1>
+            <p>Discover our complete range of VR and AR devices</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="section">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="vr">VR Headsets</button>
+            <button class="filter-btn" data-filter="ar">AR Glasses</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <div class="product-card" data-category="vr">
+                <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5" alt="VR Headset Pro" class="product-image">
+                <div class="product-info">
+                    <h3>VR Headset Pro</h3>
+                    <p>High-end VR headset with 4K display and advanced tracking</p>
+                    <div class="product-price">$599.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="ar">
+                <img src="https://img.freepik.com/premium-photo/5gconnected-smart-glasses-realtime-language-tr-00003-03_1022456-9020.jpg" alt="AR Smart Glasses" class="product-image">
+                <div class="product-info">
+                    <h3>AR Smart Glasses</h3>
+                    <p>Next-generation AR glasses with holographic display</p>
+                    <div class="product-price">$899.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="accessories">
+                <img src="https://media.sketchfab.com/models/0d802688bd11432e90bb7ba1a5a396d8/thumbnails/62da660b21354fbe97988b62f8cd1063/e3a309fe9f0a4a3ba41c9a0b907033af.jpeg" alt="VR Controller Set" class="product-image">
+                <div class="product-info">
+                    <h3>VR Controller Set</h3>
+                    <p>Precision motion controllers for immersive VR experience</p>
+                    <div class="product-price">$199.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="vr">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.jCFwe-scRWbJLM684FWpcwHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="VR Gaming Bundle" class="product-image">
+                <div class="product-info">
+                    <h3>VR Gaming Bundle</h3>
+                    <p>Complete VR gaming setup with headset and controllers</p>
+                    <div class="product-price">$799.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="ar">
+                <img src="https://media.graphassets.com/resize=width:315,height:315/TAQNPTtbTTKJylsaziFh" alt="AR Development Kit" class="product-image">
+                <div class="product-info">
+                    <h3>AR Development Kit</h3>
+                    <p>Professional AR development kit for creators</p>
+                    <div class="product-price">$1,299.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="accessories">
+                <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7" alt="VR Motion Tracker" class="product-image">
+                <div class="product-info">
+                    <h3>VR Motion Tracker</h3>
+                    <p>Advanced motion tracking sensors for VR systems</p>
+                    <div class="product-price">$149.99</div>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VR/AR Pro</h3>
+                <p>Leading the future of immersive technology</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="text-align: center; width: 100%;">&copy; 2025 VR/AR Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle">🌓</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

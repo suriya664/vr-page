@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - VR/AR Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VR/AR Pro</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-experience.html">Experience</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="features.html">Features ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                    </ul>
+                </li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="nav-buttons">
+                    <a href="login.html" class="btn-nav btn-nav-login">Login</a>
+                    <a href="register.html" class="btn-nav btn-nav-register">Register</a>
+                </li>
+                <li class="theme-toggle-mobile">
+                    <button class="theme-toggle">🌓</button>
+                </li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1556438064-2d7646166914'); min-height: 60vh;">
+        <div class="hero-content">
+            <h1>Experience VR/AR Live</h1>
+            <p>See our technology in action</p>
+        </div>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section class="section">
+        <h2 class="section-title">Interactive Demo</h2>
+        <div class="card" style="max-width: 1000px; margin: 0 auto;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 15px; background: var(--gradient-hero);">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; color: var(--text-primary);">
+                    <div style="font-size: 5rem; margin-bottom: 1rem;">🥽</div>
+                    <h3 style="margin-bottom: 0.5rem;">VR/AR Experience Demo</h3>
+                    <p style="color: var(--text-secondary);">Interactive 3D demo placeholder</p>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">Click to start immersive experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Features -->
+    <section class="section" style="background: rgba(26, 31, 58, 0.3);">
+        <h2 class="section-title">What You'll Experience</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Virtual Worlds</h3>
+                <p>Explore stunning virtual environments and interact with 3D objects</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3>Interactive Controls</h3>
+                <p>Experience intuitive hand tracking and gesture controls</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👁️</div>
+                <h3>Realistic Graphics</h3>
+                <p>See photorealistic rendering with advanced lighting and shadows</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔊</div>
+                <h3>3D Audio</h3>
+                <p>Hear spatial audio that responds to your movements</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Smooth Performance</h3>
+                <p>Experience high frame rates and low latency for seamless immersion</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Social Interaction</h3>
+                <p>Connect with others in shared virtual spaces and collaborate in real-time</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Request Form -->
+    <section class="section">
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Request a Live Demo</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">Schedule a personalized demo with our team</p>
+            <form id="demo-form">
+                <div class="form-group">
+                    <label for="demo-name">Full Name *</label>
+                    <input type="text" id="demo-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="demo-email">Email Address *</label>
+                    <input type="email" id="demo-email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="demo-company">Company Name</label>
+                    <input type="text" id="demo-company" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="demo-date">Preferred Date</label>
+                    <input type="date" id="demo-date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="demo-message">Message</label>
+                    <textarea id="demo-message" class="form-control" rows="4" placeholder="Tell us what you'd like to see..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Request Demo</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>VR/AR Pro</h3>
+                <p>Leading the future of immersive technology</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="demo.html">Demo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="text-align: center; width: 100%;">&copy; 2025 VR/AR Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle">🌓</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
